@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #0C97ED 0%, #054a75 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.data-topo {
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Botão de Localização Refinado */
+.btn-mapa {
+    display: inline-flex;
+    align-items: center;
+    margin: 15px 0 25px 0;
+    padding: 10px 22px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.4s;
+}
+
+.btn-mapa:hover {
+    background: white;
+    color: #0C97ED;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contador Moderno */
+.contador-row { display: flex; justify-content: center; gap: 15px; margin-bottom: 35px; }
+
+.tempo-unidade {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    width: 70px; height: 75px;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.tempo-unidade span { font-size: 1.5rem; font-weight: 600; color: #fff; }
+.tempo-unidade label { font-size: 0.55rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; opacity: 0.9; }
+
+/* Card Principal Branco */
+.card-main {
+    background: white;
+    border-radius: 50px;
+    padding: 50px 35px;
+    color: #2d3436;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+    position: relative;
+}
+
+.card-main h1 {
+    font-family: 'Playfair Display', serif;
+    color: #0C97ED;
+    font-size: 2.5rem;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.linha {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #0C97ED, transparent);
+    margin: 20px auto;
+}
+
+/* Formulário Profissional */
+.form-group { margin-top: 30px; text-align: left; }
+.form-group label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #95a5a6;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+input, select {
+    width: 100%; height: 55px; border-radius: 18px; border: 1px solid #f1f3f5;
+    padding: 0 20px; background: #f8f9fa; font-size: 0.95rem; box-sizing: border-box;
+    margin-top: 8px; margin-bottom: 20px; transition: all 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #0C97ED;
+    background: white;
+    box-shadow: 0 5px 15px rgba(12, 151, 237, 0.1);
+    outline: none;
+}
+
+.btn-enviar {
+    width: 100%; height: 65px;
+    background: linear-gradient(45deg, #0C97ED, #0076bf);
+    color: white; border: none;
+    border-radius: 22px; font-size: 1rem; font-weight: 600; cursor: pointer;
+    margin-top: 10px; text-transform: uppercase; letter-spacing: 1px;
+    box-shadow: 0 15px 30px rgba(12, 151, 237, 0.4); transition: all 0.3s;
+}
+
+.btn-enviar:hover { transform: translateY(-2px); box-shadow: 0 20px 40px rgba(12, 151, 237, 0.5); }
+.btn-enviar:active { transform: scale(0.97); }
